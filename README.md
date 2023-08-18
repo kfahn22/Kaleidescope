@@ -13,7 +13,7 @@
       <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/sLtJxaZXQ"> <img class="img" src="assets/tiedye1.jpg" alt="Tie Dye" style="vertical-align:top;" width="600" /><br /><sub><b>"Tie Dye"<br/></b>p5 sketch</sub></a></td>
      <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/I29DSDQOS"> <img class="img" src="assets/img1.jpg" alt="Kaleidescope" style=" display: block;
     margin-left: auto;
-    margin-right: auto;" width="600" /><br /><sub><b>Generative Fractal<br/></b>p5 sketch</sub></a></td>
+    margin-right: auto;" width="600" /><br /><sub><b>Kaleidescope<br/></b>p5 sketch</sub></a></td>
     </tr>
   </tbody>
 </table>
