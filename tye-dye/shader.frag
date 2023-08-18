@@ -1,4 +1,5 @@
-// this started as port of https://www.shadertoy.com/view/ctByWz
+// Built on top of https://www.shadertoy.com/view/ctByWz (shadertoyjiang)
+
 
 #ifdef GL_ES
 precision mediump float;
@@ -16,19 +17,20 @@ uniform sampler2D u_tex0;
 #include "lygia/color/palette/spectral.glsl"
 #include "lygia/color/pigments.glsl"
 #include "lygia/color/blend.glsl"
+#include "lygia/draw/fill.glsl"
 #include "lygia/math/rotate2d.glsl"
 #include "lygia/math/const.glsl"
+#include "lygia/math/smootherstep.glsl"
+#include "lygia/sdf/superShapeSDF.glsl"
 
-// #define ORANGE vec3(240, 128, 60) / 255.
-// #define PURPLE vec3(100, 1, 128) / 255.
-// #define BLUE vec3(58, 110, 165) / 255.
-// #define RED vec3(140, 0, 26) / 255.
 
-// Color Palette 
-#define BRIGHT_BLUE vec3(92, 122, 255) / 255.
-#define DUSTY_PURPLE vec3(99,75,102) / 255.
-#define ORANGE vec3(255, 85, 84) / 255.
-#define TURQUOISE vec3(22, 186, 197) / 255.
+// Colors
+#define ORANGE vec3(240, 128, 60) / 255.
+#define PURPLE vec3(100, 1, 128) / 255.
+#define RED vec3(140, 0, 26) / 255.
+#define BLUE vec3(58, 110, 165) / 255.
+#define MINT vec3(22, 186, 197) / 255.
+
 
 float tieDye( vec2 st, float speed, float zoom, int N) {
     #ifdef CENTER_2D
@@ -83,23 +85,31 @@ vec3 tye_dye( vec2 st, float speed,  float zoom, int N, vec3 color1, vec3 color2
   
 void main()
 {
-    vec2 uv = gl_FragCoord.xy;
-    vec2 st = gl_FragCoord.xy/u_resolution.xy;
+    vec2 st = gl_FragCoord.xy;
+    vec2 uv = gl_FragCoord.xy/u_resolution.xy;
     vec2 mouse = u_mouse.xy;
-    vec4 color = vec4(vec3(0), 1.);
+    //vec4 color = vec4(vec3(0), 1.);
+    vec4 color = vec4(COBALT_VIOLET, 1.);
   
-    // float f = tieDye(uv, 0.1, 3.0, 6); // 3.0, 6
+    // Two colors
+    //float f = tieDye(st, 0.1, 6.0, 6);// 5.0, 7
+    //color.rgb += mixOklab(RED, BLUE, f);
+   
+    // Four colors
+    // float f = tieDye(st, 0.1, 3.0, 6); // 3.0, 6
     // color.rgb = mixOklab(ORANGE, PURPLE, f);
-    // f = tieDye(uv, 0.1, 5.0, 7);// 5.0, 7
+    // f = tieDye(st, 0.1, 5.0, 7);// 5.0, 7
     // color.rgb += mixOklab(RED, BLUE, f);
   
-    float f = tieDye(uv, 0.1, 3.0, 6); // 3.0, 6
+    float f = tieDye(st, 0.1, 3.0, 6); // 3.0, 6
     color.rgb = mixOklab(COBALT_VIOLET, CADMIUM_ORANGE, f);
-    f = tieDye(uv, 0.1, 5.0, 5);// 5.0, 7
+    f = tieDye(st, 0.1, 5.0, 5);// 5.0, 7
     color.rgb += mixOklab(COBALTE_BLUE, COBALT_VIOLET, f);
-  
     
-    //color.rgb = tye_dye(uv, 0.1, 3.0, 5, ORANGE, PURPLE, RED, BLUE);
+   // Filling a shape
+    float sdf = superShapeSDF( uv, 2.25, 1.0, 1.0, 1.0, 1.0, 1.0, 8.0);
+    float s = smootherstep(0.0, 0.1, sdf);
+    color.rgb = (1.0-s)*color.rgb + s * PURPLE;
   
     gl_FragColor = color;
 }
