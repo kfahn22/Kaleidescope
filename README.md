@@ -1,6 +1,6 @@
 # Generative Kaleidescope in p5.js with LYGIA
 
-## The inspiration for the code is this [sketch](https://www.shadertoy.com/view/ctByWz). The kaleidescope function has options for speed of animation, level of zoom, and number of iterations, and two parameters that provide additional control. The first row shows the  "kaleidescope" look--use m = 1.75, n = 1.15. These images remind me of what you might see looking through a traditional kaleidescope. The second row shows a "tie-dye" look--use m = 1.5, n = 1.3. In the second image I am using the color as a texture for the supershapeSDF, which can be found on LYGIA.
+## The inspiration for the code is this [sketch](https://www.shadertoy.com/view/ctByWz). The kaleidescope function has options for speed of animation, level of zoom, and number of iterations, and two parameters that provide additional control. The first row shows the "kaleidescope" look--use m = 1.75, n = 1.15. These images remind me of what you might see looking through a traditional kaleidescope. The second row shows a "tie-dye" look--use m = 1.5, n = 1.3. In the second image I am using the color as a texture for the supershapeSDF, which can be found on LYGIA.
 
 ## Notes about usage
 
@@ -22,8 +22,8 @@
     margin-right: auto;" width="600" /><br /><sub><b>Four Color Kaleidescope<br/></b>p5 sketch</sub></a></td>
     </tr>
     <tr>
-      <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/sLtJxaZXQ"> <img class="img" src="assets/tiedye1.jpg" alt="Tie Dye" style="vertical-align:top;" width="600" /><br /><sub><b>Two Color Tie Dye<br/></b>p5 sketch</sub></a></td>
-     <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/cas-a479b"> <img class="img" src="assets/tiedye-texture.jpg" alt="Kaleidescope as texture" style=" display: block;
+      <td align="center"><a href=""> <img class="img" src="assets/tiedye1.jpg" alt="Tie Dye" style="vertical-align:top;" width="600" /><br /><sub><b>Two Color Tie Dye<br/></b>p5 sketch</sub></a></td>
+     <td align="center"><a href=""> <img class="img" src="assets/tiedye-texture.jpg" alt="Kaleidescope as texture" style=" display: block;
     margin-left: auto;
     margin-right: auto;" width="600" /><br /><sub><b>Four Colors Filling Shape<br/></b>p5 sketch</sub></a></td>
     </tr>
