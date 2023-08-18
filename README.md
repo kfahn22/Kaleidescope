@@ -11,7 +11,7 @@
   <tbody>
     <tr>
       <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/sLtJxaZXQ"> <img class="img" src="assets/tiedye1.jpg" alt="Tie Dye" style="vertical-align:top;" width="600" /><br /><sub><b>" Two Color Tie Dye"<br/></b>p5 sketch</sub></a></td>
-     <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/cas-a479b"> <img class="img" src="assets/tyedye-texture.jpg" alt="Kaleidescope as texture" style=" display: block;
+     <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/cas-a479b"> <img class="img" src="assets/tiedye-texture.jpg" alt="Kaleidescope as texture" style=" display: block;
     margin-left: auto;
     margin-right: auto;" width="600" /><br /><sub><b>Four Colors Filling Shape<br/></b>p5 sketch</sub></a></td>
     </tr>
