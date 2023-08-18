@@ -16,10 +16,10 @@
 <table>
   <tbody>
   <tr>
-      <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/I29DSDQOS"> <img class="img" src="assets/img1.jpg" alt="Kaleidescope" style="vertical-align:top;" width="600" /><br /><sub><b>"Kaleidescope"<br/></b>p5 sketch</sub></a></td>
+      <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/I29DSDQOS"> <img class="img" src="assets/img1.jpg" alt="Kaleidescope" style="vertical-align:top;" width="600" /><br /><sub><b>"Two Color Kaleidescope"<br/></b>p5 sketch</sub></a></td>
      <td align="center"><a href=""> <img class="img" src="assets/img2.jpg" alt="Kaleidescope" style=" display: block;
     margin-left: auto;
-    margin-right: auto;" width="600" /><br /><sub><b>Kaleidescope<br/></b>p5 sketch</sub></a></td>
+    margin-right: auto;" width="600" /><br /><sub><b>Four Color Kaleidescope<br/></b>p5 sketch</sub></a></td>
     </tr>
     <tr>
       <td align="center"><a href="https://editor.p5js.org/kfahn/sketches/sLtJxaZXQ"> <img class="img" src="assets/tiedye1.jpg" alt="Tie Dye" style="vertical-align:top;" width="600" /><br /><sub><b>" Two Color Tie Dye"<br/></b>p5 sketch</sub></a></td>
