@@ -43,7 +43,7 @@ float kaleidescope( vec2 st, float speed, float zoom, float m, float n, int N) {
         uv = length( uv )*( uv + n); // 1.15
 	}
     uv = vec3(dot( uv, uv ) * 0.5) ;
-    return clamp(uv.x, 0.0, 1.0);
+    return uv.x;
 }
   
 void main()
@@ -53,6 +53,8 @@ void main()
     vec2 mouse = u_mouse.xy;
     vec4 color = vec4(vec3(0), 1.);
     
+
+    // Clamping f between [0.0, 1.0] mutes colors
     // Two Colors
     float f = kaleidescope(uv, 0.1, 3.0, 1.75, 1.15, 6); // 3.0, 6
     color.rgb = mix(ORANGE, PURPLE, f);
