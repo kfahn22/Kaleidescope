@@ -54,13 +54,13 @@ void main()
     vec2 mouse = u_mouse.xy;
     vec4 color = vec4(vec3(0), 1.);
     
-  
     // Multiple Colors
     float f = fractal(uv, 0.1, 3.0, 6); // 3.0, 6
     color.rgb = mix(ORANGE, PURPLE, f);
     f = fractal(uv, 0.1, 5.0, 7);// 5.0, 7
      
     color.rgb = blendAdd(color.rgb, mix(RED, BLUE, f));
+    
     // Spectral color, less detail
     //float f = fractal(uv, 0.25, 4.0, 6);
     //color.rgb = spectral_zucconi(f);
