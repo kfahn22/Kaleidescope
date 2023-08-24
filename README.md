@@ -22,8 +22,8 @@
     margin-right: auto;" width="600" /><br /><sub><b>Four Color Kaleidescope<br/></b>p5 sketch</sub></a></td>
     </tr>
     <tr>
-      <td align="center"><a href=""> <img class="img" src="assets/tiedye1.jpg" alt="Tie Dye" style="vertical-align:top;" width="600" /><br /><sub><b>Two Color Tie Dye<br/></b>p5 sketch</sub></a></td>
-     <td align="center"><a href=""> <img class="img" src="assets/tiedye-texture.jpg" alt="Kaleidoscope as texture" style=" display: block;
+      <td align="center"><a href=""> <img class="img" src="assets/img4.jpg" alt="Tie Dye" style="vertical-align:top;" width="600" /><br /><sub><b>Two Color Tie Dye<br/></b>p5 sketch</sub></a></td>
+     <td align="center"><a href=""> <img class="img" src="assets/img5.jpg" alt="Kaleidoscope as texture" style=" display: block;
     margin-left: auto;
     margin-right: auto;" width="600" /><br /><sub><b>Four Colors Filling Shape<br/></b>p5 sketch</sub></a></td>
     </tr>
