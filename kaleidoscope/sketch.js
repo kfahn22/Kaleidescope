@@ -2,7 +2,7 @@ let theShader;
 let vertSource, fragSource;
 
 function preload() {
-  img = loadImage("flowers.jpeg");
+  img = loadImage("img.jpeg");
   vertSource = loadStrings("shader.vert");
   fragSource = loadStrings("shader.frag");
 }
